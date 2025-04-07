@@ -3,7 +3,7 @@
   "title": "Warhammer Fantasy Roleplay 4th Edition",
   "description": "A comprehensive system for running grim and perilous games of Warhammer Fantasy Roleplay in the Foundry VTT environment.",
   "version": "8.5.1",
-  "authors" : [
+  "authors": [
     {
       "name": "Moo Man",
       "email": "russellt@cubicle7games.com",
@@ -14,9 +14,16 @@
       "name": "CatoThe1stElder"
     }
   ],
-  "esmodules" : [],
-  "scripts": ["wfrp4e.js", "./libs/pixi-filters.js"],
-  "styles": ["wfrp4e.css", "css/wfrp4e.css"],
+  "esmodules": [
+    "wfrp4e.js"
+  ],
+  "scripts": [
+    "./libs/pixi-filters.js"
+  ],
+  "styles": [
+    "wfrp4e.css",
+    "css/wfrp4e.css"
+  ],
   "packs": [
     {
       "name": "basic",
@@ -39,13 +46,17 @@
       "url": "https://user-images.githubusercontent.com/28637157/97379891-e4a1cc00-1893-11eb-9e0c-d93b92844d5b.jpg"
     }
   ],
-  "flags" : {
-    "hotReload": { 
-      "extensions": ["css", "hbs", "json"]
+  "flags": {
+    "hotReload": {
+      "extensions": [
+        "css",
+        "hbs",
+        "json"
+      ]
     }
   },
   "initiative": "@characteristics.i.value + @characteristics.ag.value/100",
-  "background" : "systems/wfrp4e/WFRP-Header.jpg",
+  "background": "systems/wfrp4e/WFRP-Header.jpg",
   "grid": {
     "distance": 2,
     "units": "yd",
@@ -54,24 +65,26 @@
   },
   "primaryTokenAttribute": "status.wounds",
   "secondaryTokenAttribute": "status.advantage",
-  "compatibility" : {
-    "minimum" : 12,
-    "verified" : 12,
-    "maximum" : 12
+  "compatibility": {
+    "minimum": 12,
+    "verified": 12,
+    "maximum": 12
   },
   "relationships": {
-    "requires": [{
-      "id": "warhammer-lib",
-      "type": "module",
-      "manifest": "https://raw.githubusercontent.com/moo-man/WarhammerLibrary-FVTT/1.7.1/module.json",
-      "compatibility": {
-        "minimum" : "1.7.1",
-        "verified": "1.7.1"
+    "requires": [
+      {
+        "id": "warhammer-lib",
+        "type": "module",
+        "manifest": "https://raw.githubusercontent.com/moo-man/WarhammerLibrary-FVTT/1.7.1/module.json",
+        "compatibility": {
+          "minimum": "1.7.1",
+          "verified": "1.7.1"
+        }
       }
-    }]
+    ]
   },
   "socket": true,
-  "manifest" :  "https://github.com/moo-man/WFRP4e-FoundryVTT/releases/latest/download/system.json",
-  "download" :  "https://github.com/moo-man/WFRP4e-FoundryVTT/releases/download/8.5.1/wfrp4e.zip",
-  "url" : "https://github.com/moo-man/WFRP4e-FoundryVTT"
+  "manifest": "https://github.com/moo-man/WFRP4e-FoundryVTT/releases/latest/download/system.json",
+  "download": "https://github.com/moo-man/WFRP4e-FoundryVTT/releases/download/8.5.1/wfrp4e.zip",
+  "url": "https://github.com/moo-man/WFRP4e-FoundryVTT"
 }

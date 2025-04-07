@@ -1,0 +1,26 @@
+{
+	"compilerOptions": {
+		"target": "ES2020",
+		"module": "ESNext",
+		"moduleResolution": "node",
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"strict": false,
+		"strictNullChecks": false,
+		"noImplicitAny": false,
+		"noImplicitThis": false,
+		"sourceMap": true,
+		"declaration": false,
+		"experimentalDecorators": true,
+		"baseUrl": ".",
+		"types": [],
+		"outDir": "dist",
+		"allowJs": true,
+		"checkJs": false,
+		"typeRoots": ["node_modules/@types", "types"],
+		"skipLibCheck": true,
+		"isolatedModules": true
+	},
+	"include": ["**/*.ts", "**/*.js", "types/*.d.ts"],
+	"exclude": ["node_modules", "dist", "foundry-path.mjs", "scripts/**"]
+}
